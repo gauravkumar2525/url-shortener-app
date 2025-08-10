@@ -1,11 +1,3 @@
-* `url-shortener-backend` → Node.js + Express + MongoDB backend
-* `url-shortener-frontend` → React frontend
-* Root `.gitignore` and README
-
-Here’s a **README.md** that matches your current structure:
-
----
-
 # URL Shortener App (MERN Stack)
 
 A simple and efficient **MERN stack** URL shortener application.
