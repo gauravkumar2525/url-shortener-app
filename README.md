@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+* `url-shortener-backend` → Node.js + Express + MongoDB backend
+* `url-shortener-frontend` → React frontend
+* Root `.gitignore` and README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here’s a **README.md** that matches your current structure:
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# URL Shortener App (MERN Stack)
 
-### `npm start`
+A simple and efficient **MERN stack** URL shortener application.
+The backend handles URL shortening and redirection, while the frontend offers a clean UI for creating and managing short links.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+* Shorten long URLs into compact links
+* Redirect users to the original link
+* RESTful backend API
+* React-based responsive frontend
+* MongoDB for persistent storage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+.
+├── url-shortener-backend/       # Backend code
+│   ├── server.js                # Backend entry point
+│   ├── package.json
+│   └── package-lock.json
+│
+├── url-shortener-frontend/      # Frontend code
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── package-lock.json
+│
+├── .gitignore
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Installation & Setup
 
-### `npm run eject`
+### 1️⃣ Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/gauravkumar2525/url-shortener-app.git
+cd url-shortener-app
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2️⃣ Install Backend Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd url-shortener-backend
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3️⃣ Install Frontend Dependencies
 
-## Learn More
+```bash
+cd ../url-shortener-frontend
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ▶ Running the Application
 
-### Code Splitting
+### Start Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd ../url-shortener-backend
+node server.js
+```
 
-### Analyzing the Bundle Size
+Backend runs at **[http://localhost:5000](http://localhost:5000)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Start Frontend
 
-### Making a Progressive Web App
+```bash
+cd ../url-shortener-frontend
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Frontend runs at **[http://localhost:3000](http://localhost:3000)**
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ⚙ Environment Variables
 
-### Deployment
+In `url-shortener-backend`, create a `.env` file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+BASE_URL=http://localhost:5000
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📌 API Endpoints
+
+* **POST** `/api/url/shorten` → Shortens a given URL
+* **GET** `/:code` → Redirects to original URL
+
+---
+
+## 📜 License
+
+Licensed under the MIT License.
