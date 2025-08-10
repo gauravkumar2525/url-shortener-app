@@ -1,0 +1,169 @@
+
+/* Body and root */
+body, html, #root {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafc; /* Light background */
+  color: #2d2d2d; /* Dark grey text for contrast */
+  height: 100%;
+  background-image: url('../public/37576.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Container */
+.container, .app-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.6); /* Transparent black */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+  color: #f4b400; /* Warm yellow from image */
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Form */
+form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="url"] {
+  width: 70%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #d0d7de; /* Light grey border */
+  border-radius: 6px;
+  background-color: #ffffff; /* White input */
+  color: #2d2d2d;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="url"]::placeholder {
+  color: #a0a0a0;
+}
+
+input[type="url"]:focus {
+  outline: none;
+  border-color: black; /* Light blue focus border */
+  box-shadow: 0 0 6px black;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  background: #f4b400;  /* Yellow */
+  border: none;
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #d49c01; /* Slightly darker yellow */
+}
+
+/* Error message */
+p.error, .error-msg {
+  color: #e53935; /* Bright red for errors */
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Short URL display */
+p.short-url, .short-url {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #4a90e2; /* Blue */
+}
+
+.short-url a, p.short-url a {
+  color: #357ABD; /* Darker blue link */
+  text-decoration: none;
+}
+
+.short-url a:hover, p.short-url a:hover {
+  text-decoration: underline;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  color: #2d2d2d;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4b400; /* Yellow header */
+  color: black;
+  font-weight: 600;
+}
+
+tbody tr {
+  background-color: #ffffff; /* Default white for all rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f9ff; /* Light blue for even rows */
+}
+
+tbody tr:hover {
+  background-color: #fff4d1; /* Soft yellow hover */
+}
+
+/* Links */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: #f4b400; /* Transparent black */
+  color: black; /* Yellow text */
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid black; /* Yellow border */
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(244, 180, 0, 0.7); /* Yellow hover background */
+}
